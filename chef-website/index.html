@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-lang="window">Chef Ana — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+
+<body>
+
+<div class="language-modal hidden" id="languageModal">
+  <div class="language-modal-content">
+    <h2>Select your language<br>Seleccione su idioma</h2>
+    <button class="lang-btn" data-lang="es">Spanish / Español</button>
+    <button class="lang-btn" data-lang="en">English / Inglés</button>
+  </div>
+</div>
+
+<!-- NAV + hamburger ICON (mismo markup en todas las páginas) -->
+<header id="site-header" class="site-header">
+
+  <!-- Navbar principal -->
+  <div class="navbar">
+    <div class="branding">
+      <a href="index.html" class="logo-2">
+        <img src="images/logo.png" alt="Logo Chef Ana" class="nav-logo">
+        Chef Ana
+      </a>
+    </div>
+
+    <nav id="main-nav" class="main-nav" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html" data-lang="home_nav">Home</a></li>
+        <li><a href="services.html" data-lang="services_nav">Services</a></li>
+        <li><a href="menu.html" data-lang="menu_nav">Menu</a></li>
+        <li><a href="contact.html" data-lang="contact_nav">Contact</a></li>
+      </ul>
+    </nav>
+
+      <button id="hamburger" class="hamburger" aria-label="Abrir menú">☰</button>
+  </div>
+
+</header>
+
+  <!-- Selector de idioma -->
+  <div class="language-switcher">
+    <button onclick="changeLanguage('es')">ES</button>
+    <button onclick="changeLanguage('en')">EN</button>
+  </div>
+
+  <main class="page-main">
+
+    <section class="split">
+      <div class="img-hover">
+        <img src="images/Platillo 37.jpg" alt="..." >
+      </div>
+       <div class="split-text">
+        
+        <h1 data-lang="culinary_title">Culinary Style</h1>
+        <div class="divider"></div>
+        <p class="hero p" data-lang="culinary_text">
+          Dietary needs (vegan, glutenfree, dairy-free, keto,
+          pescatarian, etc.)
+          Costa Rican national cuisine,
+          including gastronomy from
+          other countries, with fresh
+          and organic ingredients</p>
+          <div class="divider"></div>
+          <a 
+            href="#"
+            class="btn btn-primary"
+            target="_blank"
+            id="bookNowLink"
+            data-lang="book_title">
+            Book now
+          </a>
+        
+      </div>
+    </section>
+
+    <!-- Intercalado: texto izquierda - imagen derecha -->
+    <section class="split">
+    
+      <div class="split-text">          
+        <h1 data-lang="event_title">Event Capabilities</h1>
+        <div class="divider"></div>
+        <p class="hero p" data-lang="event_text">
+          Chef adaptable
+          for any family
+          or business
+          event
+          Chef Ana and her trained team are
+          equipped to handle any type of event,
+          whether an intimate family gathering
+          or a large-scale celebration.</p>
+      </div>
+      <div class="img-hover">
+      <img src="images/Platillo 1.jpg" alt="..." class="img-hover">
+      </div>
+       
+    </section>
+
+
+    <!-- Intercalado invertido: imagen izquierda - texto derecha -->
+    <section class="split">
+      <div class="img-hover">
+       <img src="images/Platillo 45.jpg" alt="..." class="img-hover">
+      </div>
+      <div class="split-text">
+        <h1 data-lang="ana_title">About Ana</h1>
+        <div class="divider"></div>
+        <p class="hero p" data-lang="ana_text">
+          With over 18 years of professional experience, Chef
+          Ana Cambronero López has created memorable
+          culinary moments for clients worldwide. Her
+          portfolio encompasses private chef services, luxury
+          events, wellness cuisine, and personalized
+          gastronomic experiences. Throughout her career,
+          she has worked for renowned celebrities in the film
+          industry and prominent business leaders, always
+          under strict confidentiality agreements.
+          A specialist in both national and international
+          cuisine, Chef Ana is known for her versatility and
+          ability to adapt to each client's preferences, from
+          service style to the desired ambiance. She also
+          precisely accommodates any type of diet or
+          nutritional requirement, guaranteeing an
+          authentic, personalized, and fully satisfying
+          culinary experience.</p>
+      </div>
+    </section>
+
+        <!-- Tarjetas rápidas -->
+<section class="services-section">
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <h3 data-lang="home_card">Home</h3>
+      <p data-lang="home_text_card">Experiencia íntima y personalizada</p>
+    </div>
+
+    <div class="service-card">
+      <h3 data-lang="event_card">Events</h3>
+      <p data-lang="event_text_card">Catering y coordinación integral.</p>
+    </div>
+
+    <div class="service-card">
+      <h3 data-lang="variety_card">Personalized Menu</h3>
+      <p data-lang="variety_text">Adaptación a necesidades, preferencias y restricciones alimenticias.</p>
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- Texto encima de imagen / cuadro semi-transparente -->
+<section class="overlay-section">
+  <div class="overlay-bg" >
+    <div class="overlay-content">
+      <h3 class="service-cards" data-lang="place_card">Places where you can find us</h3>
+      <p class="service-cards" data-lang="place_text">   AMERICA AND EUROPE</p>
+    </div>
+  </div>
+</section>
+  </main>
+
+
+<a 
+  href="#"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="WhatsApp"
+  id="whatsappLink">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+  <!-- FOOTER (igual en todas las páginas) -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <strong>Chef Ana</strong>
+        <div data-lang="correo_abajo">Email: analiethchef@gmail.com</div>
+        <div>Tel: +506 8561 2504</div>
+        <div>Santa Teresa, Costa Rica</div>
+      </div>
+      <div class="footer-rights" data-lang="derechos">© 2025 Chef Ana. All rights reserved.</div>
+    </div>
+  </footer>
+
+<script>
+const translations = {
+  es: {
+
+    window: "Chef Ana — Inicio",
+    home_nav: "Inicio",
+    services_nav: "Servicios",
+    menu_nav: "Menú",
+    contact_nav: "Contacto",
+
+    ana_title: "Sobre Ana",
+    ana_text: "Con más de 18 años de experiencia profesional, la chef Ana Cambronero López cuenta con un portafolio de servicios de chef privado, eventos de lujo, cocina de bienestar y experiencias gastronómicas personalizadas. Especialista en cocina nacional e internacional, la chef Ana es conocida por su versatilidad y su capacidad para adaptarse con precisión a cualquier tipo de dieta o requisito nutricional, garantizando una experiencia culinaria auténtica, personalizada y plenamente satisfactoria.",
+
+    culinary_title: "Estilo culinario",
+    culinary_text: "Necesidades dietéticas (vegana, sin gluten, sin lácteos, keto, pescatariana, etc.). Cocina costarricense, incluyendo gastronomía de otros países, con ingredientes frescos y orgánicos.",
+
+    event_title: "Capacidad de eventos",
+    event_text: "Chef adaptable para cualquier evento familiar o empresarial. La chef Ana y su equipo capacitado están capacitados para manejar cualquier tipo de evento, ya sea una reunión familiar íntima o una celebración a gran escala.",
+
+    home_card: "Casa",
+    home_text_card: "Experiencia íntima y personalizada",
+
+    event_card: "Eventos",
+    event_text_card: "Catering y coordinación integral",
+
+    variety_card: "Menú Personalizado",
+    variety_text: "Adaptación a necesidades, preferencias y restricciones alimenticias",
+
+    place_card: "Lugares donde nos puedes encontrar",
+    place_text: "AMERICA Y EUROPA",
+
+    book_title: "Reservar ahora",
+
+    correo_abajo:"Correo: analiethchef@gmail.com",
+
+    derechos:"© 2025 Chef Ana. Todos los derechos reservados.",
+
+    whatsapp_message:"Hola Chef Ana. Me gustaría obtener más información sobre sus servicios."
+
+  },
+
+  en: {
+
+    window: "Chef Ana — Home",
+
+    home_nav: "Home",
+    services_nav: "Services",
+    menu_nav: "Menu",
+    contact_nav: "Contact",
+
+    ana_title: "About Ana",
+
+    ana_text: " With over 18 years of professional experience, Chef Ana Cambronero López has a portfolio that encompasses private chef services, luxury events, wellness cuisine, and personalized gastronomic experiences. A specialist in both national and international cuisine, Chef Ana is known for her versatility and ability to precisely accommodates any type of diet or nutritional requirement, guaranteeing an authentic, personalized, and fully satisfying culinary experience",
+
+    culinary_title: "Culinary Style",
+    culinary_text: "Dietary needs (vegan, glutenfree, dairy-free, keto, pescatarian, etc.). Costa Rican national cuisine, including gastronomy from other countries, with fresh and organic ingredients.",
+
+    event_title: "Event Capabilities",
+    event_text: "Chef adaptable for any family or business event. Chef Ana and her trained team are equipped to handle any type of event, whether an intimate family gathering or a large-scale celebration.",
+
+    home_card: "Home",
+    home_text_card: "An intimate and personalized experience",
+
+    event_card: "Events",
+    event_text_card: "Catering and comprehensive coordination",
+
+    variety_card: "Personalized Menu",
+    variety_text: "Tailores to each clients needs, preferences and dietary restrictions.",
+
+    place_card: "Places where you can find us",
+    place_text: "AMERICA AND EUROPE",
+
+    book_title: "Book now",
+
+    correo_abajo:"Email: analiethchef@gmail.com",
+
+    derechos:"© 2025 Chef Ana. All rights reserved.",
+
+    whatsapp_message:"Hi Chef Ana. I would like to obtain more information about your services."
+  }
+};
+
+function updateWhatsAppLink() {
+  const lang = document.documentElement.lang || "en";
+  const message = translations[lang].whatsapp_message || "";
+  const phone = "50685612504";
+
+  const encodedMessage = encodeURIComponent(message);
+
+  const link = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+  document.getElementById("whatsappLink").href = link;
+  document.getElementById("bookNowLink").href = link;
+}
+
+function changeLanguage(lang) {
+document.documentElement.lang = lang;
+  document.querySelectorAll("[data-lang]").forEach(el => {
+    const key = el.getAttribute("data-lang");
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  });
+  localStorage.setItem("lang", lang);
+  updateWhatsAppLink();
+}
+
+// Mantener idioma al recargar
+const savedLang = localStorage.getItem("lang");
+if (savedLang) {
+  changeLanguage(savedLang);
+} else {
+  document.documentElement.lang = "en";
+}
+
+const currentPage = window.location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll("#main-nav a");
+
+navLinks.forEach(link => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+  }
+});
+
+// Para cuando estés en localhost o ruta raíz
+if (currentPage === "") {
+  document.querySelector('a[href="index.html"]').classList.add("active");
+}
+
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("main-nav");
+
+hamburger.addEventListener("click", () => {
+nav.classList.toggle("active");
+});
+
+document.querySelectorAll("#main-nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
